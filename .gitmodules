@@ -1,0 +1,4 @@
+[submodule "Incident_simulator"]
+	path = Incident_simulator
+	url = https://github.com/greghell/Incident_simulator.git
+	ignore = untracked

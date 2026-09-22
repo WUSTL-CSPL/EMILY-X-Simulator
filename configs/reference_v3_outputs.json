@@ -1,0 +1,47 @@
+{
+  "description": "Results before packaging; see README for package validation.",
+  "generation_seed": 20260921,
+  "split_seed": 20260922,
+  "campaign_sha256": {
+    "inputs.jsonl": "09995896d28ffad039bbb88ad975687edc280d3adb472cf4e661d7c2128d143b",
+    "labels.jsonl": "15f7eca8e58c1a8f3d72d45151bbc8551dd1599effd7210757110866e2cb8e4e",
+    "ground_truth.jsonl": "1d0d6db9caf56a1f774fe2ae10aa4dc806a7f33c1328f25cbb39b6ddab6ca3ef",
+    "scenarios.jsonl": "16212c264d8d0b82e5db40830e4991d0788525b61ceec83aadfd6d15e6276890",
+    "summary.json": "5b908bff18241389a3afd680cdcf05069bdd372fd8953806b066b6f2e6201ed7",
+    "incident_sample_ids.json": "4ea4efd6b64e655e78a67f93aae2cfe5f9c76feb380d5ccd37799add963b7508",
+    "incident_training/inputs.jsonl": "45751f2104b984d0d234c944f28636143cdf28f10d50eb73c0bc54b015670dbe",
+    "incident_training/labels.jsonl": "7acff84faf4d6bcdf5d36e656f68b2c39090fff91c6cc939f30badc5306543ad",
+    "incident_training/ground_truth.jsonl": "5baa2eca5f3dd3e799264fd9fdbdbd957d6f27845374e5830ffc3533b2006331",
+    "incident_training/selection.json": "6e85fab3a33dfc4e882f153cda31a9c2d5320e130e84910e9fce98dddb260631"
+  },
+  "v3_sha256": {
+    "train/inputs.jsonl": "64143c1f1ee4f0684273112f6d385e610d499efb91e8b282a753418b49f214a0",
+    "train/labels.jsonl": "2fafd9bb377b8e8cee13e03c2694f7d735d120f1e2b96bc067e1fefeff7da75d",
+    "train/ground_truth.jsonl": "a5976bab5141d2fef5d160ce57cc1b03fa218bd2526cc105c538e9b9ba30129a",
+    "validation/inputs.jsonl": "6cada505b5b89ad15b1e34af38e9b8d18eaa87cfb2d24c1c933c47c19ab35208",
+    "validation/labels.jsonl": "c5db883d6e9dba3a756557d40cfa0a5ddec05baabdf189f49477c7cd15d4168a",
+    "validation/ground_truth.jsonl": "949226b1eb5debc8ab6da75c347c2aa6d7aa2732680540ec99de36dd81115862",
+    "test/inputs.jsonl": "9111ad2223931deaac4136dc0dcaaf6ebe1e3c7d28915e76da65d16c089845db",
+    "test/labels.jsonl": "5847366d383e05c62496d5d480c189e77657eedbe8585d01dfa435741049210f",
+    "test/ground_truth.jsonl": "6c43da07a508ccab73217192d7d3de92e03228754dde30d95741036798b044d1",
+    "allocation.csv": "26bbadb67b88d64e69f30a052dc1b773dd7701b52afb332f3ede4856e7b86a31",
+    "unselected_sample_ids.json": "07aee504832ebb780710c34521924a75c44806960bc9bb253b0329846e6161c1",
+    "verification.json": "8f84314fa355bb74356ac395353590ba8ee6dc7992386220b3fe5f4e344d6859"
+  },
+  "reference_environment": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.5",
+    "pyproj": "3.8.0",
+    "pycraf": "2.1.0",
+    "astropy": "8.0.1"
+  },
+  "timing": {
+    "total_wall_seconds": 155.0304862840003,
+    "scene_batch_and_export_seconds": 147.88079573600044,
+    "total_scenes": 4000,
+    "workers": 8,
+    "cpu_model": "13th Gen Intel(R) Core(TM) i9-13900K",
+    "measurement": "One full fresh run with existing local IQ and SRTM files; OS file cache not cleared; no resume; excludes geographic splitting."
+  }
+}

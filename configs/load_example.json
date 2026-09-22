@@ -1,0 +1,6 @@
+[
+  {"start_s": 0, "end_s": 120, "state": "idle"},
+  {"start_s": 120, "end_s": 300, "state": "loaded"},
+  {"start_s": 300, "end_s": 420, "state": "idle"},
+  {"start_s": 420, "end_s": 600, "state": "medium"}
+]

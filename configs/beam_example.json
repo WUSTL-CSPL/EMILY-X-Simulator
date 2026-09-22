@@ -1,0 +1,8 @@
+{
+  "targets": {"custom": {"lat_deg": 39.55, "lon_deg": -114.45}},
+  "segments": [
+    {"start_s": 240, "end_s": 280, "target": "custom"},
+    {"start_s": 280, "end_s": 320, "target": "east_cell"},
+    {"start_s": 320, "end_s": 360, "target": "site"}
+  ]
+}

@@ -1,0 +1,34 @@
+# Local environments and downloaded data
+/.venv/
+/.venv
+/EMILY-X/
+/EMILY-X
+/srtm_data/
+/srtm_data
+/datasets/
+/datasets
+/runs/
+/.cache/
+/input_manifest.json
+/terrain_manifest.json
+
+# Generated Python/editor files and local credentials
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Large raw captures and simulation outputs
+*.cf32
+*.hgt
+*.npz
+*.zip
