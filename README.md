@@ -11,8 +11,7 @@ as a **Git submodule**, pinned to commit
 his public repository. Your repository stores a reference to that commit;
 Git downloads his code when the submodule is initialized.
 
-[中文说明](README_zh.md) · [Dataset design](docs/DATASET.md) ·
-[Input data](docs/DATA.md) · [GitHub and dependency setup](docs/GITHUB.md)
+[Dataset design](docs/DATASET.md) · [Input data](docs/DATA.md)
 
 ## Get the code and data
 
