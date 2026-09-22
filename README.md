@@ -1,15 +1,15 @@
-# EMILY location dataset
+# EMILY-X location dataset
 
 Generate EMILY-compatible incident records for a first transmitter-location
 experiment. Each sample is one terrestrial LTE source observed by two fixed
 receivers for 60 seconds. Source coordinates are the training target; simulation
 ground truth is kept separate from model inputs.
 
+The latest v3 dataset contains 1,000 training, 200 validation and 200 test samples, and is available in [Google Drive](https://drive.google.com/file/d/1UD6kgW4c1dSfnnBIPRJQW_ZxO-kdlZnE/view?usp=sharing)
+
 We use [Greg's EMILY-X simulator](https://github.com/greghell/Incident_simulator)
 as a **Git submodule**, pinned to commit
-`a6124824f653467173c845c4ff609d4d35d6902f` (v3.2). You do not need write access to
-his public repository. Your repository stores a reference to that commit;
-Git downloads his code when the submodule is initialized.
+`a6124824f653467173c845c4ff609d4d35d6902f` (v3.2). 
 
 [Dataset design](docs/DATASET.md) · [Input data](docs/DATA.md)
 
