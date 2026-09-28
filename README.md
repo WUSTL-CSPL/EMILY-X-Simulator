@@ -13,6 +13,8 @@ as a **Git submodule**, pinned to commit
 
 [Dataset design](docs/DATASET.md) · [Input data](docs/DATA.md)
 
+[JSONL fields and training guide](docs/DATA_FIELDS_en.md) · [中文](docs/DATA_FIELDS_zh.md)
+
 ## Get the code and data
 
 After this repository is published:
@@ -39,7 +41,7 @@ their own copies of the data.
 
 ## Set up
 
-Use Linux or WSL with Python 3.12 and Git installed:
+Use Ubuntu 22.04 with Python 3.12 and Git installed:
 
 ```bash
 bash setup_simulator.sh
@@ -78,25 +80,6 @@ using eight workers and local terrain files. That includes startup and output,
 but not geographic splitting. Use Bash's `time` before the command to measure
 your machine. Repeating a generation command with `--resume` reuses completed
 scenes; configuration, code and input checks must still match.
-
-## Verify
-
-```bash
-.venv/bin/python scripts/verify_reference.py
-.venv/bin/python -m unittest discover -s tests -v
-```
-
-The reference check compares the regenerated pool and split with 22 recorded
-file hashes. It needs no copy of the old datasets. Source hashes, local paths
-and runtime metadata will differ; the incident, label and ground-truth tables
-must match exactly in the reference environment.
-
-The historical v1-versus-v2 comparison is skipped when its old experiment files
-are absent. Record checks use the newly generated pool when no v1 pilot exists.
-Geographic-split integration tests run after generating the pool and split above.
-No model is trained or scored on the test set by these commands.
-See [the packaging validation record](docs/VALIDATION.md) for checks performed
-after moving the workflow into this repository.
 
 ## Files
 
