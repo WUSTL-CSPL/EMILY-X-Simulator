@@ -13,7 +13,7 @@ as a **Git submodule**, pinned to commit
 
 [Dataset design](docs/DATASET.md) · [Input data](docs/DATA.md)
 
-[JSONL fields and training guide](docs/DATA_FIELDS_en.md) · [中文](docs/DATA_FIELDS_zh.md)
+[JSONL fields and training guide](docs/DATA_FIELDS_en.md)
 
 ## Get the code and data
 
