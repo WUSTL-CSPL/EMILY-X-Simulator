@@ -1,0 +1,37 @@
+{
+  "version": 7,
+  "sampling_seed": 20261005,
+  "pilot_seed": 20261006,
+  "extension_split_seed": 20260930,
+  "workers": 16,
+  "batch_size": 512,
+  "max_proposals_per_split": 150000,
+  "pilot_per_width": 200,
+  "boundary_buffer_m": 250.0,
+  "min_distance_to_receiver_m": 1000.0,
+  "sizes_1000": {
+    "train": 700,
+    "validation": 150,
+    "test": 150
+  },
+  "sizes_10000": {
+    "train": 7000,
+    "validation": 1500,
+    "test": 1500
+  },
+  "added_receivers": [
+    {
+      "name": "RX3",
+      "east_m": -5000.0,
+      "north_m": -2000.0
+    },
+    {
+      "name": "RX4",
+      "east_m": 4000.0,
+      "north_m": -6000.0
+    }
+  ],
+  "output_prefix": "datasets/terrestrial_location_v7",
+  "campaign_dir": "runs/multireceiver_v7",
+  "description": "Original omnidirectional receivers; retain only scenes detected at every included receiver."
+}

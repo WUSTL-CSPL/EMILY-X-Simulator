@@ -1,7 +1,14 @@
 # The three JSONL files: fields and training guide
 
 This guide describes `terrestrial_location_v3`. Field meanings were checked
-against the dataset and generator source. [中文版](DATA_FIELDS_zh.md)
+against the dataset and generator source.
+
+The current v8 workflow keeps the same incident fields and input/label/truth
+separation, with three or four receivers and gzip-compressed JSONL parts.
+Its additional power and receiver-offset truth fields are described in
+[MULTIRECEIVER_DATASETS_V8.md](MULTIRECEIVER_DATASETS_V8.md).
+See [HANDOFF.md](HANDOFF.md) for the current 30-second generation and validation
+commands. Examples below retain the original two-receiver v3 layout.
 
 JSONL stores one JSON object per line. Here, each line represents one source
 location and its observations at both receivers. A line can contain several

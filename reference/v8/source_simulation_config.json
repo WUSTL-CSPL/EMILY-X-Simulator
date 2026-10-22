@@ -1,0 +1,64 @@
+{
+  "generator_version": 3,
+  "generator_sha256": "85cec954f4f48b0bb435422753600f003a7af3afedc9c41ae16c492852e823e4",
+  "simulator_sha256": "0479c66bda13f90c0eb65edf76deccb0b72a81cdb3cd06ef1ec2fa68a2c39a9a",
+  "stage": "train",
+  "count": 4000,
+  "cells": 10,
+  "width_km": 20.0,
+  "duration_s": 60,
+  "start_utc": "2026-09-02T19:00:00+00:00",
+  "seed": 20260921,
+  "profile_name": "near_south10",
+  "profile": {
+    "region": "midpoint",
+    "south_km": 10.0,
+    "tx_height_m": 40.0,
+    "rx_height_m": 2.0,
+    "downtilt_deg": 4.0
+  },
+  "record_format": "v2",
+  "center_latitude_deg": 39.47016783035665,
+  "center_longitude_deg": -114.45433040440209,
+  "min_distance_to_receiver_m": 1000.0,
+  "reference_transmitter": {
+    "name": "LTE_cell_tower",
+    "lat_deg": 39.160555555555554,
+    "lon_deg": -114.61435833333333,
+    "height_agl_m": 40.0,
+    "conducted_power_dbm": 43.0,
+    "center_frequency_hz": 800000000.0,
+    "channel_bandwidth_hz": 10000000.0,
+    "max_gain_dbi": 17.0,
+    "horizontal_hpbw_deg": 65.0,
+    "sector_azimuth_deg": 10.0,
+    "electrical_downtilt_deg": 4.0
+  },
+  "receivers": [
+    {
+      "name": "RX1",
+      "lat_deg": 39.5249,
+      "lon_deg": -114.373325,
+      "height_agl_m": 2.0,
+      "antenna_gain_dbi": 0.0,
+      "noise_figure_db": 6.0,
+      "excess_path_loss_db": 0.0
+    },
+    {
+      "name": "RX2",
+      "lat_deg": 39.595518,
+      "lon_deg": -114.535418,
+      "height_agl_m": 2.0,
+      "antenna_gain_dbi": 0.0,
+      "noise_figure_db": 6.0,
+      "excess_path_loss_db": 0.0
+    }
+  ],
+  "srtm_dir": "srtm_data",
+  "iq_sha256": "be00aca9b549b6f421668e55fe3180c1abe2821fa832860eabe1489e0342a04b",
+  "propagation": "unmodified upstream ITU-R P.452-16 + SRTM",
+  "sampling": "equal count per spatial cell; uniform within cell outside receiver exclusion",
+  "loaded_state_only": true,
+  "rejection_sampling": false,
+  "incident_training_target": 1000
+}

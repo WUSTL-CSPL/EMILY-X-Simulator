@@ -1,0 +1,12 @@
+{
+  "datasets": {
+    "20": "datasets/terrestrial_location_v6_20km",
+    "40": "datasets/terrestrial_location_v6_40km"
+  },
+  "sizes": {"train": 7000, "validation": 1500, "test": 1500},
+  "sampling_seed": 20260929,
+  "extension_split_seed": 20260930,
+  "boundary_buffer_m": 250.0,
+  "min_distance_to_receiver_m": 1000.0,
+  "workers": 8
+}

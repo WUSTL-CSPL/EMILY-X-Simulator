@@ -1,0 +1,15 @@
+{
+  "name": "terrestrial_location_v5_lpda92",
+  "baseline_dataset": "datasets/terrestrial_location_v3",
+  "output": "datasets/terrestrial_location_v5_lpda92",
+  "srtm_dir": "srtm_data",
+  "workers": 8,
+  "receiver_pattern": {
+    "model": "POYNTING LPDA-92",
+    "data_file": "configs/antennas/lpda92_digitized_v5.json",
+    "pointing": "fixed_toward_baseline_region_center",
+    "elevation_deg": 0.0,
+    "additional_cable_loss_db": 0.0,
+    "polarization": "matched_scalar_reference"
+  }
+}

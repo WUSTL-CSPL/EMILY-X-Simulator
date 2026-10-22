@@ -19,13 +19,16 @@ srtm_data/
 Use Greg's supplied data bundle for IQ. The `.cf32` file contains complex radio
 samples; the JSON sidecar describes the sample rate, sample count and format.
 The generator uses the loaded LTE state only. It builds five spectrum templates
-from the half-second capture, then reuses them through each 60-second scene.
+from the half-second capture, then reuses them through each scene: 60 seconds
+for the original v3/v8 experiments, or 30 seconds for the current portable v8 run.
 
 SRTM files are elevation-map tiles. Every new source position gets a new terrain
 profile to each receiver and a new P.452 loss calculation. The local tile cache
 saves downloading maps again; it does not reuse an old source's path loss.
 
 To reproduce v3, use the tiles listed in `configs/reference_v3_inputs.json`.
+The current portable v8 workflow checks the same tile cache against
+`reference/v8/environment.json`; keep its directory layout intact.
 Copy the original `srtm_data/` directory, preserving its subdirectories, or use
 `scripts/link_local_data.py` on a machine that has the previous workspace.
 The dataset generator disables terrain downloads. For a different region,

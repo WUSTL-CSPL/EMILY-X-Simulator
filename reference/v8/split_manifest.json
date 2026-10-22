@@ -1,0 +1,33 @@
+{
+  "version": 3,
+  "split_seed": 20260922,
+  "block_width_m": 4000.0,
+  "boundary_buffer_each_side_m": 250.0,
+  "block_roles": {
+    "2": "test",
+    "18": "test",
+    "23": "test",
+    "3": "test",
+    "21": "validation",
+    "0": "validation",
+    "6": "validation",
+    "20": "validation",
+    "15": "train",
+    "8": "train",
+    "24": "train",
+    "14": "train",
+    "13": "train",
+    "12": "train",
+    "22": "train",
+    "4": "train",
+    "9": "train",
+    "1": "train",
+    "10": "train",
+    "11": "train",
+    "17": "train",
+    "16": "train",
+    "19": "train",
+    "7": "train",
+    "5": "train"
+  }
+}

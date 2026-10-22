@@ -1,11 +1,16 @@
 # EMILY-X location dataset
 
-Generate EMILY-compatible incident records for a first transmitter-location
-experiment. Each sample is one terrestrial LTE source observed by two fixed
-receivers for 60 seconds. Source coordinates are the training target; simulation
-ground truth is kept separate from model inputs.
+Generate EMILY-compatible incident records for transmitter localization. The current v8 workflow produces three- and four-receiver datasets with 30-second observations, random transmitter power and receiver measurement offsets.
 
-The latest v3 dataset contains 1,000 training, 200 validation and 200 test samples, and is available in [Google Drive](https://drive.google.com/file/d/1UD6kgW4c1dSfnnBIPRJQW_ZxO-kdlZnE/view?usp=sharing)
+**Start here:** [English handoff](docs/HANDOFF.md) · [Files prepared for submission](docs/PUSH_CONTENTS.md) · [JSONL fields](docs/DATA_FIELDS_en.md)
+
+```bash
+# After setup and providing IQ/terrain assets
+.venv/bin/python generate_dataset.py --config configs/portable_smoke.json
+.venv/bin/python scripts/verify_portable_output.py --config configs/portable_smoke.json
+```
+
+The original v3 reference contains 1,000 training, 200 validation and 200 test samples and is available in [Google Drive](https://drive.google.com/file/d/1UD6kgW4c1dSfnnBIPRJQW_ZxO-kdlZnE/view?usp=sharing). The older v3 commands below remain for that reference experiment; use the handoff for current v8 generation.
 
 We use [Greg's EMILY-X simulator](https://github.com/greghell/Incident_simulator)
 as a **Git submodule**, pinned to commit
@@ -41,10 +46,10 @@ their own copies of the data.
 
 ## Set up
 
-Use Ubuntu 22.04 with Python 3.12 and Git installed:
+Use Linux or WSL2 with Python 3.12 and Git installed:
 
 ```bash
-bash setup_simulator.sh
+EMILYX_PYTHON=python3.12 bash setup_simulator.sh
 .venv/bin/python scripts/check_inputs.py --reference-v3
 ```
 

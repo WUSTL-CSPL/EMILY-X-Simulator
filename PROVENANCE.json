@@ -1,0 +1,9 @@
+{
+  "upstream_repository": "https://github.com/greghell/Incident_simulator",
+  "upstream_commit": "a6124824f653467173c845c4ff609d4d35d6902f",
+  "source_snapshot_included": true,
+  "source_distribution": "Pinned Git submodule at Incident_simulator; initialize with git submodule update --init --recursive.",
+  "source_machine_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "reference_v8_signature": "61b1f4ac8254e2fa1246775b966c2a8d20ebf1c2b04728a9fb3220f21087df43",
+  "purpose": "Reproduce v8 terrestrial 30-second randomized-power/noise datasets on a new Linux/WSL machine. Existing datasets, campaign checkpoints, secrets and shutdown automations are excluded."
+}

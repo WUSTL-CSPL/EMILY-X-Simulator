@@ -1,0 +1,15 @@
+{
+  "name": "terrestrial_location_v4_directional",
+  "baseline_dataset": "datasets/terrestrial_location_v3",
+  "output": "datasets/terrestrial_location_v4_directional",
+  "srtm_dir": "srtm_data",
+  "workers": 8,
+  "receiver_pattern": {
+    "model": "horizontal_parabolic",
+    "pointing": "fixed_toward_baseline_region_center",
+    "horizontal_hpbw_deg": 120.0,
+    "peak_gain_dbi": 0.0,
+    "max_attenuation_db": 20.0,
+    "vertical_pattern": "none"
+  }
+}
